@@ -1,0 +1,489 @@
+#print("hello world")
+#print(5)
+#print("hey i am a \"good boy\" \n and he is also a good boy")
+# can we comment this line so that we can understand
+    
+               #VARIABLES AND DATA TYPES
+"""a = complex(6,2)
+b = 2
+c = "saras"
+d = True
+
+print("type of a is",type(a))
+print("type of a is",type(b))
+print("type of a is",type(c))
+print("type of a is",type(d))
+
+a = 50
+b = 3
+
+print("The value of ", a ,"+",b,"is",a+b)
+print("The value of ", a ,"-",b,"is",a-b)
+print("The value of ", a ,"*",b,"is",a*b)
+print("The value of ", a ,"/",b,"is",a/b)
+print("The value of ", a ,"//",b,"is",a//b)
+print("The value of ", a ,"%",b,"is",a%b)
+     #TYPE CASTING
+a = "1" 
+b = "2"
+print(int(a) + int(b))
+print(a+b)
+
+        #Local and Global Variable:
+x = "awesome"
+
+def myfun():
+  print("python is "+x)
+
+
+myfun()
+
+x = "fantastic"
+def myfun():
+  x = "awesome"
+  print("python is "+x)
+  myfun()
+print("python is "+ x)
+
+# To make the variable global throughout the function and outside the function
+
+x = "fantastic"
+def myfun():
+  global x
+  x = "awesome"
+  print("python is "+x)
+
+
+myfun()
+print("python is "+ x)
+
+#  Datatype of the variable:
+
+a = "saras"
+print(type(a))
+
+for x in "banana":
+  print(x)
+
+a = "hello,world!"
+print(len(a))
+print("he" in a)
+
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+
+a = input("Enter your name:")
+print("the name is " ,a)
+
+x = (input("Enter the first number:"))
+y = (input("Enter the other number:"))
+print(x+y)
+print(int(x) +int(y))
+
+
+#String in python:
+name1 = "Saras"
+name2 = "rani"
+name3 = name1+name2
+print(name3)
+print("Hello "+ name3)
+print(name3[0])
+print(name3[1])
+print(name3[2])
+print(name3[3])
+print(name3[4])
+print(name3[5])
+print(name3[6])
+print(name3[7])
+print(name3[8])
+for x in name2:
+  print(x)
+
+#slicing in python:
+
+names = "saras,rani"
+print(names[0:5])
+print(names[:])
+print(len(names))
+
+
+a ="Saras!!!!!!!!!"
+print(a.upper())
+print(a.lower())
+print(a.rstrip("!"))
+print(a.replace("Saras","Sara"))
+print(len(a))
+print(a.endswith("!!!"))
+
+age = int(input())
+txt = "My name is John, I am ",age
+print(txt.format(age))
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price)) 
+print("Hello\rWorld!")
+
+a = int(input("Enter your name :"))
+print("your age is ",a)
+
+if(a>18):
+  print("greater than 18 ")
+  print("yes")
+
+else:
+  print("no")
+
+
+name = "Abhishek"
+for i in name:
+  print(i)
+  if(i=="b"):
+   print("This is something special")
+
+colors = ["Red","Green","Blue","Yellow"]
+for color in colors:
+  print(color)
+  for i in color:
+    print(i)
+
+
+for k in range(5):
+  print(k+1)
+
+i = 0
+while(i<=3):
+  print(i)
+  i=i+1
+i = 0
+while(i<=38):
+  i = int(input("Enter the number:"))
+  print(i) 
+
+count = 5
+while(count>0):
+ print(count)
+ count = count-1
+
+for i in range(12):
+ if(i==10):
+   print("skip the iteration")
+   continue
+print("5 X", i, "=" ,5 *i)
+
+def calculateGmean(a,b):
+  mean = (a*b)/(a+b)
+  print(mean)
+
+a=9
+b=8
+calculateGmean(a,b)
+
+# To make a function to find maximum of two number:
+
+def maximum(a,b):
+ if(a>b):
+  print(a,"is greater")
+ else:
+   print(b,"is greater")
+
+a = 12
+b=13
+maximum(a,b)
+
+c = 45
+d = 50
+maximum(c,d)
+
+def isLesser(a,b):
+  if(a<b):
+    print(a , "is lesser")
+  else:
+    print(b, "is lesser")
+
+a = 2
+b = 6
+isLesser(a,b)
+
+
+def average(a=9,b=1):
+  print("The average is ",(a+b)/2)
+
+average(b=9)
+
+def average(*numbers):
+  sum = 0
+  for i in numbers:
+    sum = sum + i
+
+  print("Average is :",sum/len(numbers))
+average(5,6)
+
+l = [3,5,6]
+print(l)
+print(l[0])
+print(l[1])
+print(l[2])
+l.append("saras")
+print(l)
+
+if 6 in l:
+  print("yes")
+else:
+  print("No")
+
+print(l)
+print(l[1:4:2])
+
+lst = [ i for i in range(4)]
+print(lst)
+
+
+lst = [ i*i for i in range(4)]
+print(lst)
+
+lst = [ i*i for i in range(10) if i%2==0]
+print(lst)
+
+l = [1,2,3,4,5,6]
+print(l)
+l.append(7)
+print(l)
+l.sort(reverse=True)
+print(l)
+l.reverse()
+print(l)
+print(l.index(1))
+
+
+l = [11, 45, 67, 85, 3, 5, 6]
+print(l)
+###print(l)
+
+m= l.copy()
+m[0] = 0
+print(l)  # this wont mamek a new list, instead it will change the original list
+
+# INNSER FUNCTION
+
+l = [11, 45, 67, 85, 3, 5, 6]
+l.insert(1,899)
+print(l)
+
+l = [11, 45, 67, 85, 3, 5, 6]
+print(l)
+
+m = [900,1000,1100]
+l.extend(m)
+print(l)
+
+# TUPLE: tuple is immutable as in we can't change the elements of the tuple 
+#Tuples items are enclosed with brackets() and separated by commas.
+
+tup = (1, 5, 6, 56, 7, 889, 89, "saras",True)
+#tup[0] = 90  , this will through an error as the value inside tuple cannot be changed.
+print(tup)
+print(tup[0])
+print(tup[-1]) # negative indexing , length of the tuple - indexi.e 9-1 = 8th index  i.e True
+print(tup[6])
+print(tup[-2])
+print(type(tup))
+
+if 889 in tup:
+  print("yes, 889 is present in the tuple")
+else:
+  print("No , it is not present")
+
+# Operations in Tuple :  If we want to add, remove or change tuple items, then first you must convert the tuple to a list. Then perform operation on that
+
+countries  = ("Spain","Italy","India","England","Germany")
+temp = list(countries)
+temp.append("Russia")
+temp.pop(3)
+temp[2] = "Finland"
+countries = tuple(temp)
+print(countries)
+
+tuple1 = (0,1,2,3,2,3,1,3,2,3,31)
+l = len(tuple1)
+print(l )
+res = tuple1.count(3)
+print("count of 3 in tuple1 is",res)
+
+# f strings in python (string formatting in python)
+
+letter  = "Hey my name is {} and I am from {}"
+country = "India"
+name = "Saras"
+#print(letter.format(name, country))
+ # using this we wont be able to understand which one will come first and which will come at the end. for this we use fstring
+
+print(f"Hey my name is {name} and I am from {country}")
+
+#Docstring in Python
+
+def square(n):
+  '''Takes in a number n , and returns the square of the number n'''  # this is a docstring , it should be written just after the function line only that will be considered as docstring.
+  print(n**2)
+square(5)
+print(square.__doc__)
+
+
+#***************** Recursion in python:calling a function inside the same function*********************.
+
+#factorial(7) = 7*6*5*4*3*2*1)
+#factorial(6) = 6*5*4*3*2*1
+#facorial(5) = 5*4*3*2*1
+#factorial(4) = 4*3*2*1
+#..................
+#factorial(0) = 1
+
+#factorial(n) = n * factorial(n-1)
+def factorial(n):
+  if(n==0 or n==1):
+    return 1
+  else:
+    return n * factorial(n-1)
+
+print(factorial(4))
+print(factorial(3))
+print(factorial(6))
+
+s = {2,4,2,6}
+print(s)
+
+
+saras = set(2,3,4,'sars',True)
+for value in saras:
+  print(value)
+
+s1 = {1,2,5,6}
+s2 = {3,6,7}
+print(s1.union(s2))
+print(s1.intersection(s2))
+
+
+# DICTIONARY IN PYTHON:
+
+info = {'name':'Saras','age':19,'eligible':True}
+print(info)
+print(info.keys())
+print(info.values()) 
+
+ep1 = {122:45,123:89,567:69,670:69}
+ep2 = {222:67,566:90}
+#ep1.update(ep2)
+#print(ep1)
+#ep1.clear()
+
+ep1.popitem()
+print(ep1)
+
+a = input("Enter the number: ")
+print(f"Multiplication table of {a} is: ")
+
+for i in range(1,11):
+  print(f"{int(a)} X {i} = {int(a)*i}")
+
+
+# Python3 program to swap first
+# and last element of a list
+
+# Swap function
+def swapList(newList):
+
+    newList[0], newList[-1] = newList[-1], newList[0]
+
+    return newList
+
+# Driver code
+newList = [12, 35, 9, 56, 24]
+print(swapList(newList))
+
+
+from _typeshed import structseq
+
+
+test_list = [1, 4, 5, 6, 7]
+
+# Printing list
+print("Original list is : " + structseq(test_list))
+
+print("Hello World")
+
+import pandas
+import calculate
+
+print("Hello world")
+print(calculate.x)
+
+i = 1
+while i < 10:
+  print(i)
+  i = i+1
+
+exp = -1
+total = 0
+maxexp = 0
+minexp = 0
+2
+while exp !=0:
+  exp = int(input("ennter your exp: "))
+  total = total + exp
+  if exp > maxexp:
+    maxexp = exp
+  if exp < minexp:
+    minexp = exp
+
+print("your total expense is: ",total)
+print("Your max exp is : ", maxexp)
+print("Your min exp is : ", minexp)
+
+def find_max(list):
+    return max(list)
+    
+list = [1,2,3,4,5]
+print(find_max(list))
+
+exp = [12,34,50,68,13]
+print(exp)
+print("Total item in the list is : ",len(exp))
+exp.append(24)
+print(exp)
+
+exp = []
+stopped = False
+
+while not stopped:
+  e = int(input("What is the expense : "))
+  if e != 0:
+    exp.append(e)
+  else:
+    stopped = True
+print(exp)
+print("Total Expense is : ",sum(exp))
+print("Max Expense is : ",max(exp))
+print("Min Expense is :",min(exp))
+
+l = []
+
+num = 1
+while num <= 100:
+  l.append(num)
+  num = num + 1
+
+print(l)"""
+
+
+
+
+  
+
+
+
